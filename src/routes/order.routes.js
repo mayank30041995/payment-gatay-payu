@@ -19,7 +19,7 @@ router.post('/hashing', async (req, res) => {
     key: merchant_Key,
     txnid: transitionId,
     customerName,
-    amount: parseInt(amount),
+    amount: amount,
     productInfo,
     customerId,
     email: 'test@gmail.com',
