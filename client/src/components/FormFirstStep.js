@@ -122,11 +122,13 @@ function FormFirstStep({ form, hash, transitionId, onSubmit }) {
       </Formik>
       {/*  */}
       <form action="https://test.payu.in/_payment" method="post">
-        <input type="hidden" name="key" value={process.env.merchant_Key} />
+        <input type="hidden" name="key" value={'gtKFFx'} />
         <input type="hidden" name="txnid" value={transitionId} />
         <input type="hidden" name="productinfo" value={'Testing_Product'} />
         <input type="hidden" name="customerName" value={form.customerName} />
-
+        <input type="hidden" name="email" value="test@gmail.com" />
+        <input type="hidden" name="firstname" value="Ashish" />
+        <input type="hidden" name="lastname" value="Kumar" />
         <input type="hidden" name="amount" value={form.amount} />
         <input
           type="hidden"
